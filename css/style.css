@@ -1,0 +1,37 @@
+body {
+    background-color: #f0f0f0;
+}
+
+section {
+    margin: 50px;
+    padding: 10px;
+    border: 3px #ddd dotted;
+}
+
+section > div {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+section h2 {
+    background-color: yellow;
+    padding: 10px;
+}
+
+h3 {
+    margin: 0;
+}
+
+img {
+    width: 800px;
+}
+
+div.code {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+div.code > code {
+    padding: 10px;
+    font-family: monospace;
+    background-color: white;
+}

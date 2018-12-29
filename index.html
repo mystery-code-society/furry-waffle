@@ -2,10 +2,335 @@
 <html>
     <head>
         <title> </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
 
-    HELLO, CODERS!
+    <h1>HELLO, CODERS!</h1>
+    <h2>Let's get set up for our projects.</h2>
+    
+    <h3>This is a multistep process, as follows:</h3>
+    <ol>
+        <li><a href="#step-1">Sign Up For GitHub and Cloud9 Accounts</a></li>
+        <li><a href="#step-2">Add Your SSH key to GitHub</a></li>
+        <li><a href="#step-3">Create a Cloud9 Workspace</a></li>
+        <li><a href="#step-4">Serve a Web Page</a></li>
+        <li><a href="#step-5">git - Pushing Your First Commit</a></li>
+        <li><a href="#step-6">Set Your GitHub Pages Branch</a></li>
+        <li><a href="#step-7">Host an Image</a></li>
+        <li><a href="#step-8">Add a Stylesheet</a></li>
+        <li><a href="#step-9">Commit and Push Your Latest Changes</a></li>
+    </ol>
+    
+    <section id="step-1">
+        <h2>Step 1: Sign Up For GitHub and Cloud9 Accounts</h2>
+        <div>
+            <h3>Go to <a target="_blank" href="https://github.com">github.com</a> and sign up for an account</h3>
+            <ul>
+                <li>Your username will be part of your GitHub Pages projects URLs, so pick a good handle for yourself</li>
+                <li>Use an email address that you have access to during class such as gmail</li>
+                <li>Create a secure password following GitHub's guidelines</li>
+            </ul>
+            <img src="images/00_Sign_up_for_GitHub.png" alt="Sign up">
+        </div>
+    
+        <div>
+            <h3>Create a New Repository</h3>
+            <ul>
+                <li>Click the <strong>+</strong> in the top menu and select "New repository"</li>
+            </ul>
+            <img src="images/01_Create_a_New_Repository.png" alt="New Repository">
+            <ul>
+                <li>Your repository name with be another component of the GitHub Pages URL, so choose carefully</li>
+                <li>Description is optional, you can just leave it blank</li>
+                <li>Leave the default setting as a Public project (free GitHub accounts don't have Private projects)</li>
+                <li>Leave the default settings without a README, .gitignore: None, license: None</li>
+            </ul>
+            <img src="images/02_Create_a_New_Repository.png" alt="New Repository">
+        </div>
+        
+        <div>
+            <h3>Accept your invitation to Cloud9</h3>
+            <h3>(You should have received an email)</h3>
+            <ul>
+                <li>Follow the link in the email to sign up for our team on Cloud9</li>
+                <li>Next time to sign into your account, you will go to <a target="_blank" href="https://c9.io/login">https://c9.io/login</a></li>
+            </ul>
+            <img src="images/03_Sign_in_to_Cloud9.png" alt="Sign in to Cloud9">
+        </div>
+    </section>
+    
+    <section id="step-2">
+        <h2>Step 2: Add Your SSH Key to GitHub</h2>
+        <div>
+            <h3>Get your Cloud9 SSH Key</h3>
+            <ul>
+                <li>Click the gear icon to go to Settings</li>
+                <li>Select SSH Keys on the side menu</li>
+                <li>You want the SSH key for your private git repository</li>
+                <li>Select the really long string of characters and copy it to your clipboard</li>
+            </ul>
+            <img src="images/04_Settings_SSH_Keys.png" alt="SSH Keys">
+        </div>
+        <div>
+            <h3>Enter your SSH key into GitHub</h3>
+            <ul>
+                <li>Click your profile to go to your GitHub account settings</li>
+            </ul>
+            <img src="images/05_Account_Settings_Menu.png" alt="Settings">
+            <ul>
+                <li>Select SSH and GPG keys from the side menu</li>
+                <li>Click the green New SSH key button</li>
+            </ul>
+            <img src="images/06_SSH_and_GPG_Keys.png" alt="SSH and GPG Keys">
+            <ul>
+                <li>Give your SSH key a memorable title like Cloud9</li>
+                <li>Paste the really long string of characters from Cloud9 into the text area and click Add SSH key</li>
+            </ul>
+            <img src="images/07_Add_New_SSH_Key.png" alt="Add New SSH Key">
+            <ul>
+                <li>Your new SSH key should now be listed</li>
+            </ul>
+            <img src="images/08_SSH_Key.png" alt="SSH Key">
+        </div>
+    </section>
+    
+    <section id="step-3">
+        <h2>Step 3: Create a Cloud9 Workspace</h2>
+        <div>
+            <h3>Create a new workspace</h3>
+            <ul>
+                <li>Click the <strong>+</strong> icon to create a new workspace</li>
+                <li>Enter a memorable workspace name with no spaces that is relevant to your project</li>
+                <li>Select the HTML5 template</li>
+            </ul>
+            <img src="images/09_Create_a_New_Workspace.png" alt="Create a new workspace">
+        </div>
+        <div>
+            <h3>Link your Git repository</h3>
+            <ul>
+                <li>Wait! Before clicking that exciting, green Create workspace button in Cloud9</li>
+                <li>Paste your GitHub repository URL into the Clone from Git URL text box</li>
+            </ul>
+            <img src="images/10_GitHub_Pages_URL.png" alt="Clone git repository">
+        </div>
+    </section>
+    
+    <section id="step-4">
+        <h2>Step 4: Serve a Web Page</h2>
+        <div>
+            <h3>Create a New HTML File from Template</h3>
+            <ul>
+                <li>Select New From Template -> HTML File from the File menu</li>
+            </ul>
+            <img src="images/11_New_HTML_File_from_Template.png" alt="New HTML File">
+            <ul>
+                <li>File -> Save As and give it the filename index.html</li>
+            </ul>
+            <img src="images/12_Save_As_index.html.png" alt="Save As index.html">
+        </div>
+        <div>
+            <h3>Run the Web Server</h3>
+            <ul>
+                <li>Open the index.html file</li>
+                <li>Type something in the body of the HTML document</li>
+                <li>Save the changes to the index.html file with File -> Save or Ctrl+S</li>
+                <li>Click the Run button to start the Web Server</li>
+            </ul>
+            <img src="images/13_Run_Web_Server.png" alt="Run Web Server">
+            <ul>
+                <li>Click the url in the server log output in the terminal</li>
+                <li>Select Open to show the website in a new tab</li>
+            </ul>
+            <img src="images/14_Open_Website.png" alt="Open">
+            <ul>
+                <li>Dismiss the warning and click Open the App</li>
+            </ul>
+            <img src="images/15_Dismiss_Warning_and_Open_the_App.png" alt="Open the App">
+            <ul>
+                <li>View your website in all its glory</li>
+            </ul>
+            <img src="images/16_Hello_Coders.png" alt="Hello Coders">
+        </div>
+    </section>
+    
+    <section id="step-5">
+        <h2>Step 5: git - Pushing Your First Commit</h2>
+        <div>
+            <h3>Check the status of changes since the last commit</h3>
+            <ul>
+                <li>In the lower section of the Cloud9 IDE, click a tab that starts with "bash"
+                <li>Or if you don't see a bash tab, click the + button then click "New Terminal"</li>
+                <li>On the command line, type: <code>git status</code></li>
+            </ul>
+            <div>
+                <code>git status</code>
+            </div>
+            <img src="images/17_git_status.png" alt="git status">
+        </div>
+        <div>
+            <h3>Add changed files to the commit</h3>
+            <ul>
+                <li>On the command line, type: <code>git add -A</code></li>
+            </ul>
+            <div class="code">
+                <code>git add -A</code>
+            </div>
+            <img src="images/18_git_add.png" alt="git add">
+        </div>
+        <div>
+            <h3>Create a commit with the message "first commit"</h3>
+            <h3>Commits allow us mark where we introduced specific changes into our "version history"</h3>
+            <ul>
+                <li>On the command line, type: <code>git commit -m "first commit"</code></li>
+            </ul>
+            <div class="code">
+                <code>git commit -m "first commit"</code>
+            </div>
+            <img src="images/19_git_commit.png" alt="git commit">
+        </div>
+        <div>
+            <h3>Push the commit up to the remote repository (GitHub)</h3>
+            <ul>
+                <li>On the command line, type: <code>git push origin master</code></li>
+            </ul>
+            <div class="code">
+                <code>git push origin master</code>
+            </div>
+            <img src="images/20_git_push.png" alt="git push">
+        </div>
+    </section>
+    
+    <section id="step-6">
+        <h2>Step 6: Set Your GitHub Pages Branch</h2>
+        <div>
+            <h3>Project Settings</h3>
+            <ul>
+                <li>Bring up your project on GitHub and navigate to the Settings tab</li>
+            </ul>
+            <img src="images/21_Project_Settings.png" alt="Project Settings">
+        </div>
+        <div>
+            <h3>GitHub Pages Branch</h3>
+            <ul>
+                <li>In Settings, scroll down to the GitHub pages section</li>
+                <li>Select the master branch and click Save</li>
+            </ul>
+            <img src="images/22_GitHub_Pages_Master_Branch.png" alt="GitHub Pages">
+        </div>
+        <div>
+            <h3>GitHub Pages URL</h3>
+            <ul>
+                <li>Your GitHub Pages website url will be shown in a blue banner</li>
+                <li>The URL format is <code>https://username.github.io/project/</code></li>
+            </ul>
+            <img src="images/23_GitHub_Pages_URL.png" alt="GitHub Pages URL">
+        </div>
+        <div>
+            <h3>View your website on the live internet!</h3>
+            <ul>
+                <li>Click the GitHub Pages url link to open your site</li>
+            </ul>
+            <img src="images/24_Hello_Coders.png" alt="Hello Coders">
+        </div>
+    </section>
+    
+    <section id="step-7">
+        <h2>Step 7: Host an Image</h2>
+        <div>
+            <h3>Create a folder for images</h3>
+            <ul>
+                <li>Right click your top-most project folder in the left section listing files and folders</li>
+                <li>Select "New Folder" from the context menu</li>
+                <li>Name the folder "images"</li>
+            </ul>
+            <img src="images/25_New_Folder.png" alt="New Folder">
+        </div>
+        <div>
+            <h3>Add an image file to the folder</h3>
+            <ul>
+                <li>Drag and drop the file from your local computer onto the images folder in Cloud9</li>
+                <li>Add an <code>img</code> tag to the <code>body</code> of your index.html document</li>
+            </ul>
+            <img src="images/26_Add_Image.png" alt="Add Image">
+        </div>
+        <div>
+            <h3>View the image on your development site</h3>
+            <ul>
+                <li>Click the url in the server log output in the terminal</li>
+                <li>Select Open to show the website in a new tab</li>
+                <li>(or just refresh the development site tab if you left it open earlier)</li>
+            </ul>
+            <img src="images/27_Hello_Coders.png" alt="Hello Coders">
+        </div>
+    </section>
+    
+    <section id="step-8">
+        <h2>Step 8: Add a Stylesheet</h2>
+        <div>
+            <h3>Add a CSS file</h3>
+            <ul>
+                <li>Add a New Folder to your project called "css"</li>
+                <li>Right click the new css folder and select New File</li>
+                <li>Give the file the name style.css</li>
+                <li>
+                    Add some css to the style.css file, such as setting the
+                    <code>background-color</code> on the body element to pink
+                </li>
+                <li>Save the changes to the style.css file with File -> Save or Ctrl+S</li>
+            </ul>
+            <img src="images/28_style.css.png" alt="style.css">
+        </div>
+        <div>
+            <h3>Add a link to the stylesheet</h3>
+            <ul>
+                <li>
+                    In the <code>head</code> of your index.html page, add a 
+                    <a target="_blank" href="https://www.w3schools.com/tags/tag_link.asp">link</a>
+                    tag to include the stylesheet
+                </li>
+                <li>Save the changes to the index.html file with File -> Save or Ctrl+S</li>
+            </ul>
+            <div class="code">
+                <code>&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;</code>
+            </div>
+            <img src="images/29_link_to_stylesheet.png" alt="link to include stylesheet">
+        </div>
+        <div>
+            <h3>Check out your site!</h3>
+            <ul>
+                <li>Click the url in the server log output in the terminal</li>
+                <li>Select Open to show the website in a new tab</li>
+                <li>(or just refresh the development site tab if you left it open earlier)</li>
+            </ul>
+            <img src="images/30_Hello_Coders.png" alt="Hello Coders">
+        </div>
+    </section>
+    
+    <section id="step-9">
+        <h2>Step 9: Commit and Push Your Latest Changes</h2>
+        <div>
+            <ul>
+                <li>Repeat <a href="#step-5">Step 5</a>, to check status, add files, commit, and push your changes</li>
+                <li>Use "add image and stylesheet" instead of "first commit" as the commit message</li>
+                <li>Changes may take a few minutes to sync, but they should be on your live GitHub Pages site shortly after you push</li>
+                <li>Visit your GitHub Pages site at <code>https://username.github.io/project/</code></li>
+                <li>You may have to do a "hard refresh" in your browser with Ctrl+F5 to bypass cache</li>
+            </ul>
+            <div class="code">
+                <code>git status</code>
+            </div>
+            <div class="code">
+                <code>git add -A</code>
+            </div>
+            <div class="code">
+                <code>git commit -m "add image and stylesheet"</code>
+            </div>
+            <div class="code">
+                <code>git push origin master</code>
+            </div>
+        </div>
+    </section>
 
     </body>
 </html>
