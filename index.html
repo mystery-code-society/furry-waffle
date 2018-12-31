@@ -27,7 +27,7 @@
         <div>
             <h3>Go to <a target="_blank" href="https://github.com">github.com</a> and sign up for an account</h3>
             <ul>
-                <li>Your username will be part of your GitHub Pages projects URLs, so pick a good handle for yourself</li>
+                <li>Your username will be in your project URL, so pick a good handle for yourself</li>
                 <li>Use an email address that you have access to during class such as gmail</li>
                 <li>Create a secure password following GitHub's guidelines</li>
             </ul>
@@ -41,10 +41,10 @@
             </ul>
             <img src="images/01_Create_a_New_Repository.png" alt="New Repository">
             <ul>
-                <li>Your repository name with be another component of the GitHub Pages URL, so choose carefully</li>
-                <li>Description is optional, you can just leave it blank</li>
+                <li>Your repository name is also in the project URL, so choose carefully</li>
+                <li>Description is optional, you can leave it blank</li>
                 <li>Leave the default setting as a Public project (free GitHub accounts don't have Private projects)</li>
-                <li>Leave the default settings without a README, .gitignore: None, license: None</li>
+                <li>Leave the default settings with no README, .gitignore: None, license: None</li>
             </ul>
             <img src="images/02_Create_a_New_Repository.png" alt="New Repository">
         </div>
@@ -54,7 +54,7 @@
             <h3>(You should have received an email)</h3>
             <ul>
                 <li>Follow the link in the email to sign up for our team on Cloud9</li>
-                <li>Next time to sign into your account, you will go to <a target="_blank" href="https://c9.io/login">https://c9.io/login</a></li>
+                <li>To sign into your account next time, you'll go to <a target="_blank" href="https://c9.io/login">https://c9.io/login</a></li>
             </ul>
             <img src="images/03_Sign_in_to_Cloud9.png" alt="Sign in to Cloud9">
         </div>
@@ -67,7 +67,7 @@
             <ul>
                 <li>Click the gear icon to go to Settings</li>
                 <li>Select SSH Keys on the side menu</li>
-                <li>You want the SSH key for your private git repository</li>
+                <li>You want the SSH key for your private git repository on the bottom</li>
                 <li>Select the really long string of characters and copy it to your clipboard</li>
             </ul>
             <img src="images/04_Settings_SSH_Keys.png" alt="SSH Keys">
@@ -113,6 +113,11 @@
                 <li>Paste your GitHub repository URL into the Clone from Git URL text box</li>
             </ul>
             <img src="images/10_GitHub_Pages_URL.png" alt="Clone git repository">
+            <ul>
+                <li>Now that you've entered that GitHub url, click Create workspace in Cloud9</li>
+                <li>Wait just a bit while your workspace is spun up</li>
+                <li>Maybe grab a snack or take a selfie cuz it's about to get real!</li>
+            </ul>
         </div>
     </section>
     
@@ -125,7 +130,7 @@
             </ul>
             <img src="images/11_New_HTML_File_from_Template.png" alt="New HTML File">
             <ul>
-                <li>File -> Save As and give it the filename index.html</li>
+                <li>File -> Save As and give it the filename "index.html"</li>
             </ul>
             <img src="images/12_Save_As_index.html.png" alt="Save As index.html">
         </div>
@@ -157,13 +162,13 @@
     <section id="step-5">
         <h2>Step 5: git - Pushing Your First Commit</h2>
         <div>
-            <h3>Check the status of changes since the last commit</h3>
+            <h3>Check the status of changes</h3>
             <ul>
                 <li>In the lower section of the Cloud9 IDE, click a tab that starts with "bash"
-                <li>Or if you don't see a bash tab, click the + button then click "New Terminal"</li>
-                <li>On the command line, type: <code>git status</code></li>
+                <li>Or if you don't see a bash tab, click the <strong>+</strong> button then click New Terminal</li>
+                <li>On the command line, type:</li>
             </ul>
-            <div>
+            <div class="code">
                 <code>git status</code>
             </div>
             <img src="images/17_git_status.png" alt="git status">
@@ -171,7 +176,7 @@
         <div>
             <h3>Add changed files to the commit</h3>
             <ul>
-                <li>On the command line, type: <code>git add -A</code></li>
+                <li>On the command line, type:</li>
             </ul>
             <div class="code">
                 <code>git add -A</code>
@@ -180,9 +185,9 @@
         </div>
         <div>
             <h3>Create a commit with the message "first commit"</h3>
-            <h3>Commits allow us mark where we introduced specific changes into our "version history"</h3>
+            <h3>Commits allow us mark where we introduced specific changes into our version history</h3>
             <ul>
-                <li>On the command line, type: <code>git commit -m "first commit"</code></li>
+                <li>On the command line, type:</li>
             </ul>
             <div class="code">
                 <code>git commit -m "first commit"</code>
@@ -192,7 +197,7 @@
         <div>
             <h3>Push the commit up to the remote repository (GitHub)</h3>
             <ul>
-                <li>On the command line, type: <code>git push origin master</code></li>
+                <li>On the command line, type:</li>
             </ul>
             <div class="code">
                 <code>git push origin master</code>
@@ -241,7 +246,7 @@
             <h3>Create a folder for images</h3>
             <ul>
                 <li>Right click your top-most project folder in the left section listing files and folders</li>
-                <li>Select "New Folder" from the context menu</li>
+                <li>Select New Folder from the context menu</li>
                 <li>Name the folder "images"</li>
             </ul>
             <img src="images/25_New_Folder.png" alt="New Folder">
@@ -249,7 +254,7 @@
         <div>
             <h3>Add an image file to the folder</h3>
             <ul>
-                <li>Drag and drop the file from your local computer onto the images folder in Cloud9</li>
+                <li>Drag and drop an image file from your local computer onto the images folder in Cloud9</li>
                 <li>Add an <code>img</code> tag to the <code>body</code> of your index.html document</li>
             </ul>
             <img src="images/26_Add_Image.png" alt="Add Image">
@@ -272,7 +277,7 @@
             <ul>
                 <li>Add a New Folder to your project called "css"</li>
                 <li>Right click the new css folder and select New File</li>
-                <li>Give the file the name style.css</li>
+                <li>Name the file "style.css"</li>
                 <li>
                     Add some css to the style.css file, such as setting the
                     <code>background-color</code> on the body element to pink
